@@ -11,8 +11,9 @@ require "Database.php";
 $config = require('config.php');
 
 $db = new Database($config['database']);
-
+// !!
 // never accept user input into a SQL query string.
+// !!
 $id = $_GET['id'];
 $query = "select * from posts where id = :id";
 
