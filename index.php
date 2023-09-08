@@ -2,10 +2,17 @@
 
 require "functions.php";
 
-// require "router.php";
-
-
 require "Database.php";
+
+require "router.php";
+
+
+
+
+
+
+/* 
+// Old Database Connection from Section 2
 
 // Connect to the database, and execute a query.
 $config = require('config.php');
@@ -20,6 +27,7 @@ $query = "select * from posts where id = :id";
 $posts = $db->query($query, [':id' => $id])->fetch();
 
 dd($posts);
+*/
 
 
 
